@@ -1,0 +1,41 @@
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<a href="/products" method = 'get'>get products</a>
+<h1 class ='jumbotron text-center'>Add Product</h1>
+<div class="container">
+	<form  enctype="multipart/form-data" action="/productUpload" method ='post'>
+
+    <div class="form-group">
+        <input type="Photo">
+     <input  class= 'form-control' type="file" name="file">
+    </div>
+
+
+	<div class="form-group">
+			<label for="name">product name</label>
+			<input class ='form-control' name = 'name' type="text">
+	</div>
+	<div class="form-group">
+		<label for="description">description</label>
+		<textarea class ='form-control' name="description" id="" cols="30" rows="10"></textarea>
+	</div>
+	<div class="form-group">
+		<label for="number">number</label>
+		<input name ='number' type="number" class="form-control">
+	</div>
+	<div class="form-group">
+		<label for="color">color</label>
+		<select name ='color' class = 'form-control'>
+		  <option value="blue">Blue</option>
+		  <option value="green">Green</option>
+		  <option value="grey">Grey</option>
+		  <option value="black">Black</option>
+		</select>
+	</div>
+	<input type="submit" class = 'button btn-primary btn-block'>
+</form>
+
+</div>
